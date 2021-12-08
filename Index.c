@@ -6,6 +6,7 @@ char nim['0'][20], nama['0'][64], kelas['0'][2], dosen['0'][64];
 #include "read.h"
 #include "update.h"
 #include "search.h"
+#include "delete.h"
 
 int main(){
     menuUtama();
@@ -39,7 +40,7 @@ int menuUtama(){
 		updateFunction();
 		break;
 	case 4:
-		// deleteFunction();
+		deleteFunction();
 		break;
 	case 5:
 		searchFunction();
