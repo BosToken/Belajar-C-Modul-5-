@@ -34,7 +34,6 @@ kembali:
 	{
 	case 1:
 		createFunction();
-		
 		break;
 	case 2:
 		showFunction();
