@@ -11,8 +11,8 @@ int showFunction()
         {
             if(strlen(nim[y]) == 0)
             {
-                i -= 1;
-                return 0;
+                // i -= 1;
+                // return 0;
             }
             else{
                 printf("Data Ke-%i\n\n", y + 1);

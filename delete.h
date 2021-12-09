@@ -1,7 +1,7 @@
 int deleteFunction()
 {
     char search[20];
-    int q;
+    int q, h;
 
     if (i == 0)
     {
@@ -24,23 +24,23 @@ int deleteFunction()
                     char pilih;
 
                     printf("\nData yang Anda Cari Ditemukan, Dengan Nama : %s", nama[q]);
-                    
-                    kembali2:
+
+                kembali2:
 
                     printf("\nApakah Ingin Melakukan Delete Pada Data Ini (y/n) : ");
                     scanf(" %c", &pilih);
                     switch (pilih)
                     {
                     case 'y':
-                        strcpy(nim[q], nim[q+1]);
-                        strcpy(nama[q], nama[q+1]);
-                        strcpy(kelas[q], kelas[q+1]);
-                        strcpy(dosen[q], dosen[q+1]);
-
-                        q--;
-                        strcpy(nim[q], "");
+                        for (h = q; h < (i-1); h++)
+                        {
+                            strcpy(nim[h], nim[h + 1]);
+                            strcpy(nama[h], nama[h + 1]);
+                            strcpy(kelas[h], kelas[h + 1]);
+                            strcpy(dosen[h], dosen[h + 1]);
+                        }
                         i--;
-                        printf("Data Yang Anda Cari Berhasil DiDelete\n"); 
+                        printf("Data Yang Anda Cari Berhasil DiDelete\n");
                         return 0;
                         break;
                     case 'n':
@@ -53,7 +53,7 @@ int deleteFunction()
                     }
                 }
             }
-            printf("NIM yang Anda Cari Tidak Tersedia"); 
+            printf("NIM yang Anda Cari Tidak Tersedia");
         }
         else
         {

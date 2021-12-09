@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 int i = 0, y = 0, x;
-char nim['0'][20], nama['0'][64], kelas['0'][2], dosen['0'][64];
+char nim['0'][20], nama['0'][64], kelas['0'][20], dosen['0'][64];
 #include "create.h"
 #include "read.h"
 #include "search.h"
@@ -34,6 +34,7 @@ kembali:
 	{
 	case 1:
 		createFunction();
+		
 		break;
 	case 2:
 		showFunction();
