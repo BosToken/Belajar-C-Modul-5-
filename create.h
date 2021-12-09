@@ -19,17 +19,23 @@ int createFunction(){
         }
         else{
             for(q = 0; q < i; q++){
-                if(strcmp(nim[i], nim[q])){
-                    printf("\nData Anda Berhasil Ditambah\n");
-                    printf("---------------------------------------\n\n");
-                    i += 1;
-                    break;
-                }
-                else{
+                if(strcmp(nim[i], nim[q]) == 0){
                     printf("\nNim Yang Anda Tambah Sudah Tersedia, Mohon Input NIM Lain\n");
                     goto kembali;
+                    // printf("\nData Anda Berhasil Ditambah\n");
+                    // printf("---------------------------------------\n\n");
+                    // i += 1;
+                    // return 0;
                 }
+                // else{
+                // }
             }
+            printf("\nData Anda Berhasil Ditambah\n");
+            printf("---------------------------------------\n\n");
+            i += 1;
+            return 0;
+            // printf("\nNim Yang Anda Tambah Sudah Tersedia, Mohon Input NIM Lain\n");
+            // goto kembali;
         }
 	}
     else{
