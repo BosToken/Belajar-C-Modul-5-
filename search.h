@@ -26,12 +26,7 @@ kembali:
                     printf("Dosen Pengajar : %s\n", dosen[q]);
                     return 0;
                 }
-                // else
-                // {
-                    // printf("\nNIM Yang Anda Cari Tidak Tersedia\n\n");
-                // }
             }
-            // printf("\nNIM Yang Anda Cari Tidak Tersedia\n\n");
             printf("\nNIM Yang Anda Cari Tidak Tersedia\n");
         }
         else

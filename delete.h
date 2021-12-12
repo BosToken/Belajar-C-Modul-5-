@@ -32,7 +32,7 @@ int deleteFunction()
                     switch (pilih)
                     {
                     case 'y':
-                        for (h = q; h < (i-1); h++)
+                        for (h = q; h < (i - 1); h++)
                         {
                             strcpy(nim[h], nim[h + 1]);
                             strcpy(nama[h], nama[h + 1]);
@@ -61,6 +61,6 @@ int deleteFunction()
             goto kembali;
         }
     }
-    kembali1 :
+kembali1:
     return 0;
 }
